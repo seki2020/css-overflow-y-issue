@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sandbox</title>
+    <meta charset="UTF-8" />
+    <style>
+      #app {
+        width: 200px;
+        margin: auto;
+        border: 1px solid blue;
+        position: relative;
+        overflow-x: auto;
+
+        /* this setting below can also hide element in x-axis tho the overflow-x is set to auto  */
+        overflow-y: scroll;
+      }
+
+      #overflowEle {
+        background: red;
+        display: block;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: -50px;
+        bottom: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="app">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore
+      architecto vel asperiores quis, perspiciatis quo possimus corrupti,
+      molestias quasi ducimus voluptates mollitia odio, nihil vero incidunt
+      pariatur corporis assumenda veniam.
+
+      <span id="overflowEle">Image</span>
+    </div>
+  </body>
+</html>
